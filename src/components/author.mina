@@ -1,0 +1,15 @@
+<config>
+{
+  "component": true
+}
+</config>
+
+<template>
+  <view> cosformula </view>
+</template>
+
+<script>
+Component({
+
+})
+</script>

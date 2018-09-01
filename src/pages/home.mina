@@ -1,0 +1,39 @@
+<config>
+{
+  "usingComponents": {
+    "author": "../components/author.mina"
+  }
+}
+</config>
+
+<style>
+</style>
+
+<template>
+  <view>
+    <!-- Hi <author />! -->
+    <map id="map" longitude="121.393270716442" latitude="31.3156997524444" scale="18" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100vw; height: 100vh;"></map>
+
+  </view>
+</template>
+
+<script>
+Page({
+  data: {
+    markers: [{
+      longitude: 121.393270716442,
+      latitude: 31.3156997524444,
+      title: '上海大学',
+      callout: {
+        content: '上海大学',
+        display: 'BYCLICK'
+      },
+      label: {
+        content: 'home sweet home'
+      },
+      // iconPath: '/assets/test.png',
+      tags: []
+    }]
+  }
+})
+</script>
